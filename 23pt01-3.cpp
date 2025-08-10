@@ -24,7 +24,7 @@ int main() {
         nset.insert(v);
         iVect.push_back({w, {u, v}});
     }
-    if(m != nset.size()) {
+    if(m != nset.size() || iVect.size() < n - 1) {
         cout << 0;
         return 0;
     }
