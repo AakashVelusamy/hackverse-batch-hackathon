@@ -42,7 +42,7 @@ int main() {
     q.push({{si, sj}, {{si, sj}}});
     visited[si][sj] = 1;
     int flag = 0;
-    int ix = 0;
+    // int ix = 0;
     while(!q.empty()) {
         auto f = q.front();
         int fi = f.first.first;
