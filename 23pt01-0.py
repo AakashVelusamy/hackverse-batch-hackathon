@@ -8,8 +8,9 @@ for i in range(n - 2):
         maxn = max(vRunes[i] + vRunes[i + 2], maxn)
     if vRunes[i] == limit:
         maxn = max(vRunes[i], maxn)
-if n == 2 and vRunes[n - 2] == limit:
+if n > 2 and vRunes[n - 2] == limit:
     maxn = max(vRunes[n - 2], maxn)
-if n == 1 and vRunes[n - 1] == limit:
+if n > 1 and vRunes[n - 1] == limit:
     maxn = max(vRunes[n - 1], maxn)
 print(maxn)
+
